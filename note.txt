@@ -1,9 +1,1 @@
-1、登陆xxlsso-server
-    http://xxlssoserver.com:8080/xxl-sso-server 访问到 com.xxl.sso.server.controller.WebController.doLogin方法
-    查询用户：com.xxl.sso.server.service.UserService.findUser
-        没找到重定向/login
-    生成sessionId：com.xxl.sso.core.store.SsoSessionIdHelper.makeSessionId（userId_version）
-    用户信息放入redis和cookie：com.xxl.sso.core.login.SsoWebLoginHelper.login
-    redis（key：xxl_sso_sessionid#userId，value：xxlUser）cookie（name：xxl_sso_sessionid，value：sessionId）
-    重定向到com.xxl.sso.server.controller.WebController.index方法
-
+源码分析博客地址：https://blog.csdn.net/qq_38270106/article/details/119914687?spm=1001.2014.3001.5501
